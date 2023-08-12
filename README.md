@@ -1,7 +1,5 @@
 # DunzoApp
 
-##
-##
 ## The Journey of making Dunzo Android App
 
 Hello there, I am Abhishek an Aspiring Android Developer . You might have used the Dunzo Android App,

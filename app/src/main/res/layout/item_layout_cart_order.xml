@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/dp_7"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/circle_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp_7"
+        android:src="@drawable/circle_dot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lastLayout"
+        app:layout_constraintStart_toEndOf="@+id/circle_dot"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCartitemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:background="@color/white"
+            android:drawablePadding="20dp"
+            android:text="Onion"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCartItemWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="@string/_1_kg"
+            android:layout_marginTop="@dimen/dp_4"
+            android:textColor="@color/dark_grey"
+            app:drawableRightCompat="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/circle_dot"
+            app:layout_constraintTop_toBottomOf="@+id/tvCartitemName" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lastLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/priceContainer"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_32"
+            android:background="@drawable/button_add_background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_7"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/ivButtonRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_horizontal_rule_24"
+                android:textColor="@color/darkgreen"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCartItemQty"
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:text="1"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivButtonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_add_24"
+                android:textColor="@color/light_green"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/priceContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvCartItemPrise"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/dp_7"
+            android:background="@color/white"
+            android:padding="@dimen/dp_7"
+            android:text="@string/_270"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

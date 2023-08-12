@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "661096631084",
+    "project_id": "dunzo-app-e7192",
+    "storage_bucket": "dunzo-app-e7192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661096631084:android:8719790c73159c7c583a89",
+        "android_client_info": {
+          "package_name": "com.abhishek.dunzoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661096631084-ltirjahlg2j0dm67dtjp3pjkt75dcc0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAhz3J1J9SSLJciBfJAEcSoROC7CUIchg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661096631084-ltirjahlg2j0dm67dtjp3pjkt75dcc0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

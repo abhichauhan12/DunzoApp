@@ -26,7 +26,7 @@ Dunzo can change the way you move things, how you shop and lets you access your 
 
 ## Here are the some screenshots of the cloned application
 ##
-## 1. Video Flash Screen 
+## 1. Flash Screen 
 
 ![Untitled (1)](https://github.com/abhichauhan12/DunzoApp/assets/32174122/0c5eda2e-2cd8-4ff4-95da-c880256f347c)
 
